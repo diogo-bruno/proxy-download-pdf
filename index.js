@@ -20,7 +20,7 @@ const stringIsAValidUrl = (s) => {
 
 const app = express();
 
-const port = 7000;
+const port = process.env.PORT || 5000;
 
 app.get('/', (req, res) => {
   function responseFile(filePath) {
